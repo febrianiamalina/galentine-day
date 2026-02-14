@@ -15,7 +15,7 @@ document.body.appendChild(renderer.domElement);
 scene.add(new THREE.HemisphereLight(0xffffff,0x444444,1));
 
 let bouquet;
-new THREE.GLTFLoader().load("bouquet.glb",g=>{
+new GLTFLoader().load("bouquet.glb", g=>{
   bouquet=g.scene;
   bouquet.scale.set(.3,.3,.3);
   scene.add(bouquet);
