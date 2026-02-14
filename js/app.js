@@ -1,5 +1,6 @@
 import '../styles/app.css'
 import handSrc from '../assets/hand_holding_phone.png'
+import photo from '../assets/scotlander.jpeg
 
 import Experience from './experience'
 
@@ -21,7 +22,7 @@ document.querySelector('#app').innerHTML = `
     Tehnologiaaa! 🪄✨
    </p>
    <img
-      src="../assets/scotlander.jpeg" 
+      src=${photo} 
       alt="Galentine's celebration" 
       style="display: block; margin: 0 auto; max-width: 80%; height: auto; border-radius: 10px;"
    />
