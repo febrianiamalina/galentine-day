@@ -20,11 +20,21 @@ document.body.appendChild(renderer.domElement);
 scene.add(new THREE.HemisphereLight(0xffffff,0x444444,1));
 
 let bouquet;
-new GLTFLoader().load("bouquet.glb",g=>{
- bouquet=g.scene;
- bouquet.scale.set(.3,.3,.3);
- scene.add(bouquet);
-});
+new GLTFLoader().load(
+ "bouquet.glb",
+ g=>{
+  console.log("BOUQUET LOADED");
+  bouquet=g.scene;
+  bouquet.scale.set(1,1,1);
+  bouquet.position.set(0,0,-1);
+  scene.add(bouquet);
+ },
+ undefined,
+ e=>{
+  console.error("GLB ERROR",e);
+ }
+);
+
 
 const hands=new Hands({locateFile:f=>`https://cdn.jsdelivr.net/npm/@mediapipe/hands/${f}`});
 hands.setOptions({maxNumHands:1,minDetectionConfidence:.7,minTrackingConfidence:.7});
