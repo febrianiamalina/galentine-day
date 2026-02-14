@@ -11,7 +11,10 @@ console.log(':: https://github.com/Alex-DG/vite-three-starter ::')
  */
 document.querySelector('#app').innerHTML = `
  <div class="introduction">
-   <h1>Happy Galentine's Day!❤️❤️</h1>
+   <h1>
+    Happy Galentine's Day!<br>
+    ❤️❤️
+   </h1>
    <p id="ar-details">
     Hi guys, I want to give you a little present. I wish I could give it physically, but for now, I hope it's good enough.<br></br>
 
