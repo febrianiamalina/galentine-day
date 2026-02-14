@@ -20,6 +20,11 @@ document.querySelector('#app').innerHTML = `
 
     Tehnologiaaa! 🪄✨
    </p>
+   <img
+      src="scotlander.jpeg" 
+      alt="Galentine's celebration" 
+      style="display: block; margin: 0 auto; max-width: 80%; height: auto; border-radius: 10px;"
+   />
  </div>
  
  <div class="loading">
