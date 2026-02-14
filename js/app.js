@@ -22,6 +22,13 @@ document.querySelector('#app').innerHTML = `
    </p>
  </div>
 
+ <div class="photo">
+    <img
+      src="scotlander.jpeg" 
+      alt="Galentine's celebration" 
+      style="display: block; margin: 0 auto; max-width: 80%; height: auto; border-radius: 10px;"
+ </div>
+ 
  <div class="loading">
     <h2>Loading 🌻</h2>
   </div>
