@@ -1,6 +1,6 @@
 import '../styles/app.css'
 import handSrc from '../assets/hand_holding_phone.png'
-import photo from '../assets/scotlander.jpeg
+import photo from '../assets/scotlander.jpeg'
 
 import Experience from './experience'
 
