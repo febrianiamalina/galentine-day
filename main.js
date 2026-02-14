@@ -3,6 +3,8 @@ import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.149.0/examples/
 import { Hands } from "https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js";
 import { Camera } from "https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js";
 
+window.addEventListener("DOMContentLoaded", () => {
+  
 const video = document.getElementById("video");
 
 navigator.mediaDevices.getUserMedia({
@@ -56,3 +58,4 @@ new Camera(video,{
  renderer.render(scene,camera);
 })();
 
+});
